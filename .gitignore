@@ -571,5 +571,9 @@ MigrationBackup/
 .docs/*.meta
 
 # Meta files for the special git files
-(README|readme)(.md|.txt).meta
-(LICENSE|license).meta
+README.md.meta
+README.txt.meta
+readme.md.meta
+readme.txt.meta
+LICENSE.meta
+license.meta
