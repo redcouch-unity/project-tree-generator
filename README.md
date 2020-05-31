@@ -1,15 +1,45 @@
 # Unity project tree generator
-This script will generate basic folder structure for your Unity3D project.
+This script will generate basic folder structure for your Unity3D project, following the Red Couch Games conventions
 
-Take a look at my [blog post](http://koprowski.it/2016/unity-project-directories/) for more information about this plugin.
-## Installation  
-Simply clone this repo into your `Assets/Editor/*` directory.
+## Getting started
+Clone this repo inside your `Assets/Editor/` directory
 
-_If you don't have `Editor` folder - create it_
 ## Usage
-When you have cloned the repository look at your Unity. There is a new option in your  toolbar.
-Choose `Tools/Generate Project Tree` and enjoy.
+The Unity3D toolbar will be supplied with a new entry called `Tools`, under that new entry you can find the `Generate Project Tree` and the `Without .keep` and `With .keep`
 
-## Contribution
-Feel free to adjust this tool to your needs.
-To change folder structure look at `GenerateFolderStructure` method in `CreateProjectTree` class.
+Note: Git does not allow the storage of empty directory. The `.keep` file is a special file that tells git to keep the directory the file is in, even if it is empty
+
+## Generated structure
+```
+Assets/Editor
+Assets/Plugins
+Assets/Resources
+Assets/Resources/Prefabs
+Assets/Scenes
+Assets/Scripts
+Assets/Scripts/Actors
+Assets/Scripts/Behaviours
+Assets/Scripts/Core
+Assets/Scripts/Helpers
+Assets/Scripts/Managers
+Assets/Scripts/Menu
+Assets/Scripts/Utils
+Assets/Static
+Assets/Static/Animations
+Assets/Static/Effects
+Assets/Static/Fonts
+Assets/Static/Materials
+Assets/Static/Models
+Assets/Static/Models
+Assets/Static/Music
+Assets/Static/Prefabs
+Assets/Static/Shaders
+Assets/Static/Sounds
+Assets/Static/Sprites
+Assets/Static/Textures
+Assets/Static/Videos
+Assets/ThirdParty
+```
+
+## Credits
+The original repository was created by [dkoprowski](https://github.com/dkoprowski) at [dkoprowski/UnityProjectTreeGenerator](https://github.com/dkoprowski/UnityProjectTreeGenerator) and modified by [maxpilotto](https://github.com/maxpilotto) for Red Couch Games
