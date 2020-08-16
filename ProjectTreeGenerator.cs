@@ -1,8 +1,6 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEditor;
 using System.IO;
-using RedCouch.Extensions;
 using System.Linq;
 
 namespace RedCouch.ProjectTreeGenerator {
@@ -14,12 +12,12 @@ namespace RedCouch.ProjectTreeGenerator {
 
                 list.RemoveAt(list.Count - 1);
 
-                return list.JoinToString(Path.DirectorySeparatorChar.ToString());
+                return string.Join(Path.DirectorySeparatorChar.ToString(), list.ToArray());
             }
         }
         public string path {
             get {
-                return segments.JoinToString(Path.DirectorySeparatorChar.ToString());
+                return string.Join(Path.DirectorySeparatorChar.ToString(), segments.ToArray());
             }
         }
 
